@@ -1,0 +1,207 @@
+.hero_section {
+  width: 100%;
+  height: 110vh;
+  background-image: url("../assets/bg/hero-img.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.section2 {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets/bg/home_sec2_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.speciality {
+  width: 100%;
+  min-height: 350px;
+  background: url("../assets/bg/hover_img.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  overflow: hidden;
+}
+
+.shadow_active {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.border_right {
+  border-right: 1px solid rgba(92, 91, 91, 0.603);
+}
+
+.gym_imgs {
+  object-fit: cover;
+  overflow: hidden;
+  transition: all ease 0.7s;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+}
+
+.gym_imgs:hover {
+  transform: scale(1.3);
+  filter: brightness(100%);
+}
+
+.gallery_box::before {
+  content: url("../assets/icons/karate_white.png");
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  left: 10%;
+  max-width: 50%;
+  height: 100%;
+  object-fit: cover;
+  overflow: initial;
+}
+
+.black_bg {
+  background: url("../assets/bg/black_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.chose_section {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/bg/cta-bg.png");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.men_rope::after {
+  content: "";
+  width: 10px;
+  height: 70%;
+  background-color: red;
+  position: absolute;
+  top: 10%;
+  right: 4%;
+  rotate: -6deg;
+}
+.men_rope::before {
+  content: "";
+  width: 10px;
+  height: 50%;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.red_bg::after {
+  content: url("../assets/bg/text_bg.svg");
+  position: absolute;
+  top: -5px;
+  left: 0;
+  z-index: -2;
+}
+
+.gym_trainer {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets/bg/team_bg.png");
+  background-position: center;
+  background-size: cover;
+  padding: 3rem 0;
+  position: relative;
+}
+
+.gym_trainer::after {
+  content: url("../assets/bg/bg_icon.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.testimonial_girl {
+  width: 25rem;
+  border-top-right-radius: 50%;
+}
+
+.box-1 {
+  background: url("../assets/imgs/girl_box.jpg");
+  background-size: cover;
+}
+
+.box-2 {
+  background: url("../assets/imgs/girl_lift.jpg");
+  background-size: cover;
+  background-position: 0 -140px;
+}
+
+.box-3 {
+  background: url("../assets/imgs/barbell.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  overflow: hidden;
+}
+.box-4 {
+  background: url("../assets/imgs/people.jpg");
+  background-position: 0 -100px;
+  background-size: cover;
+  object-fit: cover;
+  overflow: hidden;
+}
+.box-5 {
+  background: url("../assets/imgs/fitness.jpg");
+  background-position: 0 -50px;
+  background-size: cover;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.calculat {
+  background: url("../assets/bg/calculate.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.calculat::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/bg/number_bg.jpg");
+  background-position: right;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+}

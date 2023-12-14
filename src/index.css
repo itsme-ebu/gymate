@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Gym_Bold;
+  src: url("./assets/fonts/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2");
+}
+@font-face {
+  font-family: gymnormal;
+  src: url("./assets/fonts/free-fa-brands-400.woff2");
+}
+@font-face {
+  font-family: gymsolid;
+  src: url("./assets/fonts/free-fa-regular-400.woff2");
+}
+
+h1,
+h2,
+h3 {
+  font-family: Gym_Bold;
+  font-weight: bold;
+}
+p,
+li {
+  font-family: Gym_Bold;
+}
+
+.trainer_img {
+  width: 100%;
+  background: url("./assets/bg/trainer-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.trainer_line {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.trainer_line::after {
+  content: "";
+  width: 14%;
+  height: 4px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  transition: all ease 0.5s;
+}
+
+.trainer_line:hover::after {
+  width: 100%;
+}
+
+.pricing {
+  width: 100%;
+  min-height: 100vh;
+  background: url("./assets/bg/pricing_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.pricing::before {
+  content: url("./assets/bg/no_days.png");
+  position: absolute;
+  top: 10%;
+  left: 0;
+  z-index: -1;
+}
+
+.pricing1 {
+  background: url("./assets/imgs/pricing1.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+.pricing2 {
+  background: url("./assets/imgs/pricing2.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+.pricing3 {
+  background: url("./assets/imgs/pricing3.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+.page_banner {
+  background: url("./assets/bg/page_header_banner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cut_shape {
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+}
+
+.red_line {
+  width: max-content;
+  position: relative;
+  padding: 10px 0;
+}
+.red_line::after {
+  content: "";
+  width: 30%;
+  height: 4px;
+  background-color: #ff0336;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.classes {
+  width: 100%;
+  min-height: 100vh;
+  background: url("./assets/bg/classes_bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.black_effect::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
