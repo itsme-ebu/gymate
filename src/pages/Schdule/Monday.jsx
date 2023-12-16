@@ -9,7 +9,10 @@ function Monday() {
   return (
     <>
       {monday.classes.map((mon) => (
-        <div className="flex justify-around bg-[#f2f2f2] py-8 w-[95%] max-md:flex-col items-center text-center max-md:gap-5">
+        <div
+          className="flex justify-around bg-[#f2f2f2] py-8 w-[95%] max-md:flex-col items-center text-center max-md:gap-5"
+          key={mon.class_name}
+        >
           <div className="lg:w-[25%]">
             <p className="text-[#646464] text-sm my-2">Class Name</p>
             <h2 className="text-xl">{mon.class_name}</h2>

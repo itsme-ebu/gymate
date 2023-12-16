@@ -2,7 +2,6 @@ import React from "react";
 import HeaderBanner from "../components/HeaderBanner";
 import { useSelector } from "react-redux";
 import BlogBox from "../components/BlogBox";
-import { gimate_girl_banner } from "../assets";
 
 function Blog() {
   const blogs = useSelector((state) => state.blog.blog);

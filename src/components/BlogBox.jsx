@@ -1,7 +1,6 @@
 import React from "react";
 
 function BlogBox({ blog }) {
-  console.log(blog);
   return (
     <div>
       <img src={blog.banner} className="w-full h-full object-cover" />

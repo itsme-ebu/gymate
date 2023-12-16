@@ -28,6 +28,8 @@ import PageTwo from "./components/PageTwo.jsx";
 import Blog from "./pages/Blog.jsx";
 import Contact from "./pages/Contact.jsx";
 import Classes from "./pages/Classes.jsx";
+import Signup from "./pages/Signup.jsx";
+import SignIn from "./pages/SignIn.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -50,6 +52,8 @@ const router = createBrowserRouter(
       <Route path="blog" element={<Blog />} />
       <Route path="classes" element={<Classes />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="signup" element={<Signup />} />
+      <Route path="signin" element={<SignIn />} />
     </Route>
   )
 );

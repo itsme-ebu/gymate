@@ -34,6 +34,7 @@ import {
 } from "../assets";
 import Trainers from "../components/Trainers";
 import Pricing from "../components/Pricing";
+import BMI from "../components/BMI";
 
 function Home() {
   const trainers = useSelector((state) => state.trainers.trainers);
@@ -48,7 +49,7 @@ function Home() {
             <h2 className="text-5xl ">
               MAKE YOUR BODY <span className=" font-normal">FIT & PERFECT</span>
             </h2>
-            <button className="px-6 py-3 bg-white text-black my-8 font-semibold uppercase">
+            <button className="px-6 py-3 button_shadow bg-white text-black my-8 font-semibold uppercase">
               Our classes{" "}
               <i className="ri-arrow-right-line text-xl text-[#FF0336]"></i>
             </button>
@@ -114,11 +115,11 @@ function Home() {
               program designed to help you reach your fitness goals.
             </p>
             <div className="grid grid-cols-3 my-8 text-center max-md:grid-cols-1 max-md:px-14">
-              <div className="border_right py-5 max-md:border-none">
+              <div className=" lg:border-r py-5 max-md:border-none">
                 <img src={weightlifter_icon} className="w-16 mx-auto mb-5" />
                 <h2 className="text-xl">PROFESSIONAL TRAINERS</h2>
               </div>
-              <div className="border_right py-5 max-md:border-none">
+              <div className="lg:border-r py-5 ">
                 <img src={equpments_icon} className="w-16 mx-auto mb-5" />
                 <h2 className="text-xl">MODERN EQUIPMENTS</h2>
               </div>
@@ -127,10 +128,10 @@ function Home() {
                 <h2 className="text-xl">FANCY GYM MACHINES</h2>
               </div>
             </div>
-            <button className="px-6 py-3 bg-[#3F3f3F] hover:bg-[#FF0336] text-white font-bold uppercase block max-sm:mx-auto">
+            <button className="button_shadow px-6 py-3 bg-red-600 hover:bg-[#FF0336] text-white font-bold uppercase block max-sm:mx-auto">
               Take a tour
               <i className="ri-arrow-right-line text-xl font-thin text-white ml-3"></i>
-            </button>{" "}
+            </button>
           </div>
           <div className=" relative px-4 max-lg:hidden">
             <img src={girl_text_bg} className="w-[17%] h-auto" />
@@ -158,7 +159,7 @@ function Home() {
         </div>
 
         <div className="grid grid-cols-4 px-6 gap-4 my-10 max-lg:grid-cols-1">
-          <div className=" gallery_box col-span-2 h-[18rem] overflow-hidden relative max-lg:col-span-1">
+          <div className=" col-span-2 h-[18rem] overflow-hidden relative max-lg:col-span-1">
             <img src={cycling_girl} className="gym_imgs" />
             <div className=" absolute bottom-5 left-6">
               <h2 className="text-3xl text-white">Cycling</h2>
@@ -354,39 +355,7 @@ function Home() {
         </div>
       </section>
       {/* Calculate BMI */}
-      <section className=" min-h-[40vh] calculat px-8 text-white flex items-center max-md:bg-right max-md:px-3">
-        <div className="py-10 w-full">
-          <h2 className="text-[2.5rem]">
-            Let's Calculate Your <span className="text-red-600">BMI</span>{" "}
-          </h2>
-          <p className="text-[#646464] w-[80%] my-4 max-md:w-full">
-            Easily determine your body mass index with our accurate calculation
-            tool.
-          </p>
-          <div className="flex gap-1 w-full">
-            <div>
-              <input
-                type="number"
-                placeholder="Weight/kg"
-                className=" p-2 w-[80%] my-2 bg-transparent text-white outline-none border"
-              />
-              <p>Your BMI is:</p>
-            </div>
-            <div>
-              <input
-                type="number"
-                placeholder="Height/cm"
-                className=" p-2 w-[80%] my-2 bg-transparent text-white outline-none border"
-              />
-              <p>Your weight is: </p>
-            </div>
-          </div>
-
-          <button className="px-10 py-4 bg-[#595959] hover:bg-[#ff0336] text-white my-4 font-semibold uppercase w-fit">
-            calculate
-          </button>
-        </div>
-      </section>
+      <BMI />
       {/* PRICING CHART */}
       <Pricing />
       {/* Our Recent News */}
@@ -456,6 +425,7 @@ function Home() {
           PURCHASE NOW
         </button>
       </section>
+
       {/* Footer */}
     </div>
   );

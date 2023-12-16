@@ -5,6 +5,7 @@ const initialState = {
     {
       day: "Monday",
       link: "monday",
+      path: "/schedule/monday",
       classes: [
         {
           class_name: "Fitness",
